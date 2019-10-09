@@ -20,10 +20,12 @@ export default new Router({
       component: Page1
     },
     {
-      path: '/page2',
+      path: '/page2/:id/:msg',
       name: 'page2',
       component: Page2
     }
+
+
 
     // {
     //   path: '/about',

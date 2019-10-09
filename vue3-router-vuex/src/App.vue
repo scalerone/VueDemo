@@ -3,8 +3,8 @@
     <!-- 路由导航 -->
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/page1">page1</router-link>|
-      <router-link to="/page2">page2</router-link>
+      <router-link to="/page1/bar">page1</router-link>|
+      <router-link to="/page2/1/vuejs?foo=bar">page2</router-link>
     </div>
     <!-- 路由出口 -->
     <router-view/>
