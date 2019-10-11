@@ -1,6 +1,7 @@
 <template>
     <div>
         <h3>page1</h3>
+        <p>props获取参数{{foo}}</p>
     <p>
         <button @click="gotoPage2()">跳转至Page2</button>
     </p>
@@ -10,6 +11,7 @@
 <script>
     export default {
         name: "Page1",
+        props:['foo'],
         created() {
             console.log(this.$route.params.foo)
            console.log(this.$router)

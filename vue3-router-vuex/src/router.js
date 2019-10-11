@@ -5,6 +5,14 @@ import Page1 from "./views/Page1.vue";
 import Page2 from "./views/Page2.vue";
 Vue.use(Router)
 
+function func({ params, query }) {
+  return {
+    id: params.id,
+    msg: params.msg,
+    foo: query.foo
+  };
+}
+
 export default new Router({
   mode: 'history',
   // base: process.env.BASE_URL,
@@ -17,12 +25,14 @@ export default new Router({
     {
       path: '/page1/:foo',
       name: 'page1',
+      props:true,
       component: Page1
     },
     {
       path: '/page2/:id/:msg',
       name: 'page2',
-      component: Page2
+      component: Page2,
+      props: func
     }
 
 
