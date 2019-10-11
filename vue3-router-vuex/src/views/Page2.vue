@@ -5,7 +5,7 @@
         <p>id:{{$route.params.id}}</p>
         <p>hello:{{name}}</p>
         <p>msg:{{$route.params.msg}}</p>
-        <p>msg:{{$route.query.foo}}</p>
+        <p>query:{{$route.query.foo}}</p>
 
     </div>
 </template>
