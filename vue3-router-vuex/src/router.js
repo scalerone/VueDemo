@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Page1 from "./views/Page1.vue";
 import Page2 from "./views/Page2.vue";
+import Count from "./views/Count.vue";
 Vue.use(Router)
 
 function func({ params, query }) {
@@ -21,6 +22,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/count',
+      name: 'count',
+      component: Count
     },
     {
       path: '/page1/:foo',
