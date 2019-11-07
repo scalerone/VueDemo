@@ -5,6 +5,7 @@
       <h2>vue中组件通信的八种方式</h2>
       <ul>
         <li><router-link to="/demo1">父子通信 props / $emit</router-link> |</li>
+        <li><router-link to="/demo2">父子通信 $children / $parent</router-link> |</li>
         <li><router-link to="/">Home</router-link> |</li>
 
       </ul>

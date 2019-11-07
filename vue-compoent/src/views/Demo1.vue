@@ -1,6 +1,7 @@
 <template>
     <div class="home">
        demo1 :父组件通过props的方式向子组件传递数据
+        <hr>
         <Section />
     </div>
 </template>
