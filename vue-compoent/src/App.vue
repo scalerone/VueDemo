@@ -6,7 +6,7 @@
       <ul>
         <li><router-link to="/demo1">父子通信 props / $emit</router-link> |</li>
         <li><router-link to="/demo2">父子通信 $children / $parent</router-link> |</li>
-        <li><router-link to="/">Home</router-link> |</li>
+        <li><router-link to="/demo3">父子或跨级通信 provide/ inject</router-link> |</li>
 
       </ul>
     </div>
