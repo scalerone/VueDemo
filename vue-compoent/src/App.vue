@@ -7,6 +7,8 @@
         <li><router-link to="/demo1">父子通信 props / $emit</router-link> |</li>
         <li><router-link to="/demo2">父子通信 $children / $parent</router-link> |</li>
         <li><router-link to="/demo3">父子或跨级通信 provide/ inject</router-link> |</li>
+        <li><router-link to="/demo4">父子通信 ref / refs</router-link> |</li>
+        <li><router-link to="/demo5">跨级通信 $attrs与 $listeners</router-link> |</li>
 
       </ul>
     </div>

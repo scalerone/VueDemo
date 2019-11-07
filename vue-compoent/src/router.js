@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Demo1 from './views/Demo1.vue'
 import Demo2 from './views/Demo2.vue'
 import Demo3 from './views/Demo3.vue'
+import Demo4 from './views/Demo4.vue'
 
 Vue.use(Router)
 
@@ -34,7 +35,7 @@ export default new Router({
     {
       path: '/demo4',
       name: 'demo4',
-      component: Demo2
+      component: Demo4
     },
 
 
