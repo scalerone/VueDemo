@@ -5,8 +5,11 @@
         <p>id:{{$route.params.id}}</p>
         <p>hello:{{name}}</p>
         <p>msg:{{$route.params.msg}}</p>
-        <p>msg:{{$route.query.foo}}</p>
-
+        <p>query:{{$route.query.foo}}</p>
+        <!-- 通过属性传递过来 -->
+        <p>id:{{id}}</p>
+        <p>msg:{{msg}}</p>
+        <p>msg:{{foo}}</p>
     </div>
 </template>
 

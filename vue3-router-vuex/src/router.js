@@ -3,7 +3,16 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Page1 from "./views/Page1.vue";
 import Page2 from "./views/Page2.vue";
+import Count from "./views/Count.vue";
 Vue.use(Router)
+
+function func({ params, query }) {
+  return {
+    id: params.id,
+    msg: params.msg,
+    foo: query.foo
+  };
+}
 
 export default new Router({
   mode: 'history',
@@ -15,14 +24,21 @@ export default new Router({
       component: Home
     },
     {
-      path: '/page1',
+      path: '/count',
+      name: 'count',
+      component: Count
+    },
+    {
+      path: '/page1/:foo',
       name: 'page1',
+      props:true,
       component: Page1
     },
     {
       path: '/page2/:id/:msg',
       name: 'page2',
-      component: Page2
+      component: Page2,
+      props: func
     }
 
 
