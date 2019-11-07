@@ -1,37 +1,38 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-   <el-button>11111</el-button>
-    <div>
-      <p>
-        If Element is successfully added to this project, you'll see an
-        <code v-text="'<el-button>'"></code>
-        below
-      </p>
-      <el-button>el-button</el-button>
+    <!-- 路由导航 -->
+    <div id="nav">
+      <h2>vue中组件通信的八种方式</h2>
+      <ul>
+        <li><router-link to="/demo1">父子通信 props / $emit</router-link> |</li>
+        <li><router-link to="/">Home</router-link> |</li>
+
+      </ul>
     </div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <hr>
+    <!-- 路由出口 -->
+    <router-view/>
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  }
+  #nav {
+    padding: 30px;
+  }
+
+  #nav a {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+  #nav a.router-link-exact-active {
+    color: #42b983;
+  }
 </style>
